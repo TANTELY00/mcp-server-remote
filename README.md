@@ -1,24 +1,80 @@
-INSTALLATION DES DEPENDANCES  : 
-
-- installation de uv : pip install uv
-- initialiser uv dans un proje : uv init 
-- pour installer les dependances definie dans le projet : uv sync 
-
-CREATION et ACTIVATION DE LA VARIABLE D'ENVIRONNEMENT 
-- uv venv 
-- source .venv/bin/activate
-
-DEMANDE A UV D'AJOUTER LES COMMANDE MCP 
-- uv add "mcp[cli]"
-
-INSTALLATION DE LA DEPENDANCE DOTENV POUR AVOIR ACCEDER DANS LE FICHIER .ENV COMME VARIABLE D'ENVIRONNEMENT 
-- uv add python-dotenv 
-
-INSTALLATION DE LA DEPENDANCE TAVILY POUR AVOIR ACCEDER A LAL RECHERCHE SUR WEB 
-- uv add tavily-python 
-
-POUR FAIRE UN TESTE DES TOOLS DANS LE SERVEUR , il faut installer 
--  npx @modelcontextprotocol/inspector@0.15  
 
 
+## INSTALLATION DES DÉPENDANCES
+
+* Installation de **uv** :
+
+  ```bash
+  pip install uv
+  ```
+
+* Initialiser un projet avec **uv** :
+
+  ```bash
+  uv init
+  ```
+
+* Installer les dépendances définies dans le projet :
+
+  ```bash
+  uv sync
+  ```
+
+---
+
+## CRÉATION ET ACTIVATION DE L’ENVIRONNEMENT VIRTUEL
+
+* Créer un environnement virtuel :
+
+  ```bash
+  uv venv
+  ```
+
+* Activer l’environnement virtuel :
+
+  ```bash
+  source .venv/bin/activate
+  ```
+
+---
+
+## AJOUT DES COMMANDES MCP
+
+* Ajouter les commandes **MCP CLI** :
+
+  ```bash
+  uv add "mcp[cli]"
+  ```
+
+---
+
+## GESTION DES VARIABLES D’ENVIRONNEMENT
+
+* Installer **python-dotenv** pour accéder aux variables définies dans un fichier `.env` :
+
+  ```bash
+  uv add python-dotenv
+  ```
+
+---
+
+## INSTALLATION DE LA DÉPENDANCE TAVILY
+
+* Installer **tavily-python** pour effectuer des recherches sur le web :
+
+  ```bash
+  uv add tavily-python
+  ```
+
+---
+
+## TEST DES TOOLS DU SERVEUR MCP
+
+* Pour tester les outils disponibles sur le serveur MCP, installer **mcp-inspector** :
+
+  ```bash
+  npx @modelcontextprotocol/inspector@0.15
+  ```
+
+---
 
